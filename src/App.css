@@ -1,0 +1,55 @@
+h4 {
+  line-height: 2.4rem;
+}
+
+.padding-less {
+  padding: 0px;
+}
+
+.margin-less {
+  margin: 0px;
+}
+
+.text-align-right {
+  text-align: right;
+}
+
+.width-100 {
+  width: 100% !important;
+}
+
+.page-container {
+  margin: 20px;
+}
+
+.table-row-click {
+  cursor: pointer; 
+  cursor: hand;
+}
+
+.table-row-click span:not(.badge) {
+  line-height: 3rem;
+}
+
+.post-list .media-body .jumbotron {
+  padding-left: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 20px;
+}
+
+.interaction-info h4 {
+  vertical-align: text-bottom;
+  min-height: 24px;
+}
+.interaction-info h4 span {
+  display: inline-block;
+}
+
+.comment-panel .panel-heading {
+  padding: 0px 5px;
+}
+.comment-panel .panel-heading .interaction-info h4 {
+  min-height: auto !important;
+  font-size: 14px;
+}
