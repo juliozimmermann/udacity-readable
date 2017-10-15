@@ -36,8 +36,10 @@ export class AddEditPost extends Component {
             submit === false) {
             
             if (submit) {
-                localPost = this.state.post;
-                localPost.timestamp = Date.now();
+                localPost = {
+                    ...this.state.post,
+                    timestamp: Date.now()
+                };
             }
 
             this.props.addUpdatePost(localPost);

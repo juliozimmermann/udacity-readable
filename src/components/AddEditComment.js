@@ -39,10 +39,11 @@ export class AddEditComment extends Component {
             let localComment = null;
 
             if (submit === true) {
-                localComment = this.state.comment;
-                
-                localComment.id = localComment.id || uuid();
-                localComment.timestamp = Date.now();
+                localComment = {
+                    ...this.state.comment,
+                    id: this.state.comment.id || uuid(),
+                    timestamp: Date.now()
+                }
             }
 
             this.props.addUpdateComment(localComment);

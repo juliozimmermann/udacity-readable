@@ -5,7 +5,7 @@ import { Label } from 'react-bootstrap';
 
 export const Category = (props) => {
     return (
-            <Label bsStyle="warning">{'#' + props.category}</Label>
+            <Label bsStyle="warning">{`#${props.category}`}</Label>
     );
 }
 
