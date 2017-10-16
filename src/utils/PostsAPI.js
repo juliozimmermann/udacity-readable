@@ -56,7 +56,7 @@ export const commentDownVote = (commentId) => postVote(`${url}/comments/${commen
 
 export const addPostAPI = (post) => fetch(`${url}/posts`, {...POST, body: JSON.stringify(post)}).then(toJson);
 export const updatePostAPI = (post) => fetch(`${url}/posts/${post.id}`, {...PUT, body: JSON.stringify(post)}).then(toJson);
-export const deletePostAPI = (postId) => fetch(`${url}/posts/${postId}`, {...DELETE});
+export const deletePostAPI = (postId) => fetch(`${url}/posts/${postId}`, {...DELETE}).then(toJson);
 
 export const addCommentAPI = (comment) => {
     return fetch(`${url}/comments`, {...POST, body: JSON.stringify(comment)}).then(toJson);

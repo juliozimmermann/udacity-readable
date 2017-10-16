@@ -118,7 +118,9 @@ export function updatePost(post) {
 }
 export function deletePost(postId) {
     return function(dispatch) {
-        deletePostAPI(postId).then(deletedPost => dispatch(loadPosts()));
+        deletePostAPI(postId)
+            .then(deletedPost => dispatch(addUpdatePost(deletedPost)))
+            .catch(() => dispatch(loadAllData()));
     }
 }
 
